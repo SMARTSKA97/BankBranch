@@ -16,5 +16,14 @@ namespace BankBranchWebAPI_DAL.Data
 
         public DbSet<Bank> Banks { get; set; }
         public DbSet<Branch> Branches { get; set; }
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
+        {
+            modelBuilder.Entity<Bank>()
+                .HasMany(b => b.Branches)
+                .WithOne(br => br.Bank)
+                .HasForeignKey(br => br.Bank_ID);
+
+            // Optional: If you want to add some initial data or configure table names, do it here
+        }
     }
 }

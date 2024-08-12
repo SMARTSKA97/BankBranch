@@ -5,9 +5,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace BankBranchWebAPI_DAL.Repositories
+namespace BankBranchWebAPI_BAL.Services
 {
-    public interface IBankRepository
+    public interface IBankService
     {
         Task<IEnumerable<Bank>> GetAllBanksAsync();
         Task<Bank> GetBankByIdAsync(int id);

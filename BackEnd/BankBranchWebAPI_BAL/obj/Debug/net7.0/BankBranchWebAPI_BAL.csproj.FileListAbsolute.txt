@@ -8,6 +8,7 @@ C:\Users\Administrator\Documents\Projects\BankBranch\BackEnd\BankBranchWebAPI_BA
 C:\Users\Administrator\Documents\Projects\BankBranch\BackEnd\BankBranchWebAPI_BAL\obj\Debug\net7.0\BankBranchWebAPI_BAL.AssemblyInfoInputs.cache
 C:\Users\Administrator\Documents\Projects\BankBranch\BackEnd\BankBranchWebAPI_BAL\obj\Debug\net7.0\BankBranchWebAPI_BAL.AssemblyInfo.cs
 C:\Users\Administrator\Documents\Projects\BankBranch\BackEnd\BankBranchWebAPI_BAL\obj\Debug\net7.0\BankBranchWebAPI_BAL.csproj.CoreCompileInputs.cache
+C:\Users\Administrator\Documents\Projects\BankBranch\BackEnd\BankBranchWebAPI_BAL\obj\Debug\net7.0\BankBranchWebAPI_BAL.sourcelink.json
 C:\Users\Administrator\Documents\Projects\BankBranch\BackEnd\BankBranchWebAPI_BAL\obj\Debug\net7.0\BankBran.DF041F1E.Up2Date
 C:\Users\Administrator\Documents\Projects\BankBranch\BackEnd\BankBranchWebAPI_BAL\obj\Debug\net7.0\BankBranchWebAPI_BAL.dll
 C:\Users\Administrator\Documents\Projects\BankBranch\BackEnd\BankBranchWebAPI_BAL\obj\Debug\net7.0\refint\BankBranchWebAPI_BAL.dll

@@ -1,11 +1,17 @@
+using BankBranchWebAPI_BAL.Services;
 using BankBranchWebAPI_DAL.Data;
 using BankBranchWebAPI_DAL.Models;
+using BankBranchWebAPI_DAL.Repositories;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Options;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
+builder.Services.AddScoped<IBankService, BankService>();
+builder.Services.AddScoped<IBranchService, BranchService>();
+builder.Services.AddScoped<IBankRepository, BankRepository>();
+builder.Services.AddScoped<IBranchRepository, BranchRepository>();
 
 //Registering Database
 builder.Services.AddDbContext<ApplicationDbContext>(option => {
