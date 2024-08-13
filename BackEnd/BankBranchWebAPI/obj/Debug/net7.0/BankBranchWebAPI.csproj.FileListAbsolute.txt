@@ -212,10 +212,6 @@ C:\Users\Administrator\Documents\Projects\BankBranch\BackEnd\BankBranchWebAPI\bi
 C:\Users\Administrator\Documents\Projects\BankBranch\BackEnd\BankBranchWebAPI\bin\Debug\net7.0\runtimes\win\lib\net6.0\System.Drawing.Common.dll
 C:\Users\Administrator\Documents\Projects\BankBranch\BackEnd\BankBranchWebAPI\bin\Debug\net7.0\runtimes\win\lib\net6.0\System.Security.Cryptography.ProtectedData.dll
 C:\Users\Administrator\Documents\Projects\BankBranch\BackEnd\BankBranchWebAPI\bin\Debug\net7.0\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
-C:\Users\Administrator\Documents\Projects\BankBranch\BackEnd\BankBranchWebAPI\bin\Debug\net7.0\BankBranchWebAPI_BAL.dll
-C:\Users\Administrator\Documents\Projects\BankBranch\BackEnd\BankBranchWebAPI\bin\Debug\net7.0\BankBranchWebAPI_DAL.dll
-C:\Users\Administrator\Documents\Projects\BankBranch\BackEnd\BankBranchWebAPI\bin\Debug\net7.0\BankBranchWebAPI_BAL.pdb
-C:\Users\Administrator\Documents\Projects\BankBranch\BackEnd\BankBranchWebAPI\bin\Debug\net7.0\BankBranchWebAPI_DAL.pdb
 C:\Users\Administrator\Documents\Projects\BankBranch\BackEnd\BankBranchWebAPI\obj\Debug\net7.0\BankBranchWebAPI.csproj.AssemblyReference.cache
 C:\Users\Administrator\Documents\Projects\BankBranch\BackEnd\BankBranchWebAPI\obj\Debug\net7.0\BankBranchWebAPI.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\Administrator\Documents\Projects\BankBranch\BackEnd\BankBranchWebAPI\obj\Debug\net7.0\BankBranchWebAPI.AssemblyInfoInputs.cache

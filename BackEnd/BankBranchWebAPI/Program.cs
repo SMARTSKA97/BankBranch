@@ -1,4 +1,6 @@
-using BankBranchWebAPI_BAL.Services;
+using BankBranchWebAPI.BAL.IServices;
+using BankBranchWebAPI.BAL.Services;
+using BankBranchWebAPI.DAL.IRepository;
 using BankBranchWebAPI_DAL.Data;
 using BankBranchWebAPI_DAL.Models;
 using BankBranchWebAPI_DAL.Repositories;
@@ -12,6 +14,12 @@ builder.Services.AddScoped<IBankService, BankService>();
 builder.Services.AddScoped<IBranchService, BranchService>();
 builder.Services.AddScoped<IBankRepository, BankRepository>();
 builder.Services.AddScoped<IBranchRepository, BranchRepository>();
+//services.AddControllers()
+//    .AddJsonOptions(options =>
+//    {
+//        options.JsonSerializerOptions.ReferenceHandler = System.Text.Json.Serialization.ReferenceHandler.Preserve;
+//    });
+
 
 //Registering Database
 builder.Services.AddDbContext<ApplicationDbContext>(option => {

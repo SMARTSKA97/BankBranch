@@ -24,11 +24,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\BankBranchWebAPI_BAL\BankBranchWebAPI_BAL.csproj" />
-    <ProjectReference Include="..\BankBranchWebAPI_DAL\BankBranchWebAPI_DAL.csproj" />
-  </ItemGroup>
-
-  <ItemGroup>
+    <Folder Include="BAL\Extensions\" />
     <Folder Include="Views\" />
   </ItemGroup>
 

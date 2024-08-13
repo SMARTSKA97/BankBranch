@@ -3,41 +3,44 @@
   "WorkspaceRootPath": "C:\\Users\\Administrator\\Documents\\Projects\\BankBranch\\BackEnd\\BankBranchWebAPI\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{312CA6CE-A85A-4200-8593-5D983D212EE2}|..\\BankBranchWebAPI_DAL\\BankBranchWebAPI_DAL.csproj|c:\\users\\administrator\\documents\\projects\\bankbranch\\backend\\bankbranchwebapi_dal\\models\\branch.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{BB3B8C8F-7F9C-49F1-ABA5-6E0B6BB7AADA}|BankBranchWebAPI.csproj|c:\\users\\administrator\\documents\\projects\\bankbranch\\backend\\bankbranchwebapi\\dal\\models\\branch.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BB3B8C8F-7F9C-49F1-ABA5-6E0B6BB7AADA}|BankBranchWebAPI.csproj|solutionrelative:dal\\models\\branch.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F47F49A7-3463-49F8-952C-CE024FEEB566}|..\\BankBranchWebAPI_BAL\\BankBranchWebAPI_BAL.csproj|c:\\users\\administrator\\documents\\projects\\bankbranch\\backend\\bankbranchwebapi_bal\\services\\bankservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{BB3B8C8F-7F9C-49F1-ABA5-6E0B6BB7AADA}|BankBranchWebAPI.csproj|c:\\users\\administrator\\documents\\projects\\bankbranch\\backend\\bankbranchwebapi\\dal\\models\\bank.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BB3B8C8F-7F9C-49F1-ABA5-6E0B6BB7AADA}|BankBranchWebAPI.csproj|solutionrelative:dal\\models\\bank.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{312CA6CE-A85A-4200-8593-5D983D212EE2}|..\\BankBranchWebAPI_DAL\\BankBranchWebAPI_DAL.csproj|c:\\users\\administrator\\documents\\projects\\bankbranch\\backend\\bankbranchwebapi_dal\\repositories\\bankrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F47F49A7-3463-49F8-952C-CE024FEEB566}|..\\BankBranchWebAPI_BAL\\BankBranchWebAPI_BAL.csproj|c:\\users\\administrator\\documents\\projects\\bankbranch\\backend\\bankbranchwebapi_bal\\services\\ibankservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{BB3B8C8F-7F9C-49F1-ABA5-6E0B6BB7AADA}|BankBranchWebAPI.csproj|c:\\users\\administrator\\documents\\projects\\bankbranch\\backend\\bankbranchwebapi\\pl\\controllers\\bankcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BB3B8C8F-7F9C-49F1-ABA5-6E0B6BB7AADA}|BankBranchWebAPI.csproj|solutionrelative:pl\\controllers\\bankcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{BB3B8C8F-7F9C-49F1-ABA5-6E0B6BB7AADA}|BankBranchWebAPI.csproj|c:\\users\\administrator\\documents\\projects\\bankbranch\\backend\\bankbranchwebapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{BB3B8C8F-7F9C-49F1-ABA5-6E0B6BB7AADA}|BankBranchWebAPI.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{312CA6CE-A85A-4200-8593-5D983D212EE2}|..\\BankBranchWebAPI_DAL\\BankBranchWebAPI_DAL.csproj|c:\\users\\administrator\\documents\\projects\\bankbranch\\backend\\bankbranchwebapi_dal\\models\\bank.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{BB3B8C8F-7F9C-49F1-ABA5-6E0B6BB7AADA}|BankBranchWebAPI.csproj|c:\\users\\administrator\\documents\\projects\\bankbranch\\backend\\bankbranchwebapi\\bal\\iservices\\ibranchservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BB3B8C8F-7F9C-49F1-ABA5-6E0B6BB7AADA}|BankBranchWebAPI.csproj|solutionrelative:bal\\iservices\\ibranchservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{312CA6CE-A85A-4200-8593-5D983D212EE2}|..\\BankBranchWebAPI_DAL\\BankBranchWebAPI_DAL.csproj|c:\\users\\administrator\\documents\\projects\\bankbranch\\backend\\bankbranchwebapi_dal\\migrations\\20240812113115_initialcreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{BB3B8C8F-7F9C-49F1-ABA5-6E0B6BB7AADA}|BankBranchWebAPI.csproj|c:\\users\\administrator\\documents\\projects\\bankbranch\\backend\\bankbranchwebapi\\dal\\irepository\\ibranchrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BB3B8C8F-7F9C-49F1-ABA5-6E0B6BB7AADA}|BankBranchWebAPI.csproj|solutionrelative:dal\\irepository\\ibranchrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BB3B8C8F-7F9C-49F1-ABA5-6E0B6BB7AADA}|BankBranchWebAPI.csproj|c:\\users\\administrator\\documents\\projects\\bankbranch\\backend\\bankbranchwebapi\\dal\\irepository\\ibankrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BB3B8C8F-7F9C-49F1-ABA5-6E0B6BB7AADA}|BankBranchWebAPI.csproj|solutionrelative:dal\\irepository\\ibankrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BB3B8C8F-7F9C-49F1-ABA5-6E0B6BB7AADA}|BankBranchWebAPI.csproj|c:\\users\\administrator\\documents\\projects\\bankbranch\\backend\\bankbranchwebapi\\bankbranchwebapi.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{BB3B8C8F-7F9C-49F1-ABA5-6E0B6BB7AADA}|BankBranchWebAPI.csproj|solutionrelative:bankbranchwebapi.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     },
     {
       "AbsoluteMoniker": "D:0:0:{BB3B8C8F-7F9C-49F1-ABA5-6E0B6BB7AADA}|BankBranchWebAPI.csproj|c:\\users\\administrator\\documents\\projects\\bankbranch\\backend\\bankbranchwebapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
       "RelativeMoniker": "D:0:0:{BB3B8C8F-7F9C-49F1-ABA5-6E0B6BB7AADA}|BankBranchWebAPI.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BB3B8C8F-7F9C-49F1-ABA5-6E0B6BB7AADA}|BankBranchWebAPI.csproj|c:\\users\\administrator\\documents\\projects\\bankbranch\\backend\\bankbranchwebapi\\controllers\\branchcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BB3B8C8F-7F9C-49F1-ABA5-6E0B6BB7AADA}|BankBranchWebAPI.csproj|solutionrelative:controllers\\branchcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BB3B8C8F-7F9C-49F1-ABA5-6E0B6BB7AADA}|BankBranchWebAPI.csproj|c:\\users\\administrator\\documents\\projects\\bankbranch\\backend\\bankbranchwebapi\\controllers\\bankcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BB3B8C8F-7F9C-49F1-ABA5-6E0B6BB7AADA}|BankBranchWebAPI.csproj|solutionrelative:controllers\\bankcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F47F49A7-3463-49F8-952C-CE024FEEB566}|..\\BankBranchWebAPI_BAL\\BankBranchWebAPI_BAL.csproj|c:\\users\\administrator\\documents\\projects\\bankbranch\\backend\\bankbranchwebapi_bal\\services\\ibranchservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{BB3B8C8F-7F9C-49F1-ABA5-6E0B6BB7AADA}|BankBranchWebAPI.csproj|c:\\users\\administrator\\documents\\projects\\bankbranch\\backend\\bankbranchwebapi\\pl\\controllers\\branchcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BB3B8C8F-7F9C-49F1-ABA5-6E0B6BB7AADA}|BankBranchWebAPI.csproj|solutionrelative:pl\\controllers\\branchcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -47,38 +50,76 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Branch.cs",
-              "DocumentMoniker": "C:\\Users\\Administrator\\Documents\\Projects\\BankBranch\\BackEnd\\BankBranchWebAPI_DAL\\Models\\Branch.cs",
-              "RelativeDocumentMoniker": "..\\BankBranchWebAPI_DAL\\Models\\Branch.cs",
-              "ToolTip": "C:\\Users\\Administrator\\Documents\\Projects\\BankBranch\\BackEnd\\BankBranchWebAPI_DAL\\Models\\Branch.cs",
-              "RelativeToolTip": "..\\BankBranchWebAPI_DAL\\Models\\Branch.cs",
-              "ViewState": "AQIAABYAAAAAAAAAAAAqwB8AAAAAAAAA",
+              "DocumentIndex": 1,
+              "Title": "Bank.cs",
+              "DocumentMoniker": "C:\\Users\\Administrator\\Documents\\Projects\\BankBranch\\BackEnd\\BankBranchWebAPI\\DAL\\Models\\Bank.cs",
+              "RelativeDocumentMoniker": "DAL\\Models\\Bank.cs",
+              "ToolTip": "C:\\Users\\Administrator\\Documents\\Projects\\BankBranch\\BackEnd\\BankBranchWebAPI\\DAL\\Models\\Bank.cs",
+              "RelativeToolTip": "DAL\\Models\\Bank.cs",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-12T12:00:58.543Z",
-              "IsPinned": true,
+              "WhenOpened": "2024-08-13T12:04:01.141Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "BankService.cs",
-              "DocumentMoniker": "C:\\Users\\Administrator\\Documents\\Projects\\BankBranch\\BackEnd\\BankBranchWebAPI_BAL\\Services\\BankService.cs",
-              "RelativeDocumentMoniker": "..\\BankBranchWebAPI_BAL\\Services\\BankService.cs",
-              "ToolTip": "C:\\Users\\Administrator\\Documents\\Projects\\BankBranch\\BackEnd\\BankBranchWebAPI_BAL\\Services\\BankService.cs",
-              "RelativeToolTip": "..\\BankBranchWebAPI_BAL\\Services\\BankService.cs",
-              "ViewState": "AQIAABwAAAAAAAAAAAAWwCYAAAAnAAAA",
+              "DocumentIndex": 0,
+              "Title": "Branch.cs",
+              "DocumentMoniker": "C:\\Users\\Administrator\\Documents\\Projects\\BankBranch\\BackEnd\\BankBranchWebAPI\\DAL\\Models\\Branch.cs",
+              "RelativeDocumentMoniker": "DAL\\Models\\Branch.cs",
+              "ToolTip": "C:\\Users\\Administrator\\Documents\\Projects\\BankBranch\\BackEnd\\BankBranchWebAPI\\DAL\\Models\\Branch.cs",
+              "RelativeToolTip": "DAL\\Models\\Branch.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABYAAAA4AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-12T11:23:35.925Z",
+              "WhenOpened": "2024-08-13T11:57:26.616Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "IBranchService.cs",
+              "DocumentMoniker": "C:\\Users\\Administrator\\Documents\\Projects\\BankBranch\\BackEnd\\BankBranchWebAPI\\BAL\\IServices\\IBranchService.cs",
+              "RelativeDocumentMoniker": "BAL\\IServices\\IBranchService.cs",
+              "ToolTip": "C:\\Users\\Administrator\\Documents\\Projects\\BankBranch\\BackEnd\\BankBranchWebAPI\\BAL\\IServices\\IBranchService.cs",
+              "RelativeToolTip": "BAL\\IServices\\IBranchService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-13T11:18:16.566Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "IBankRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Administrator\\Documents\\Projects\\BankBranch\\BackEnd\\BankBranchWebAPI\\DAL\\IRepository\\IBankRepository.cs",
+              "RelativeDocumentMoniker": "DAL\\IRepository\\IBankRepository.cs",
+              "ToolTip": "C:\\Users\\Administrator\\Documents\\Projects\\BankBranch\\BackEnd\\BankBranchWebAPI\\DAL\\IRepository\\IBankRepository.cs",
+              "RelativeToolTip": "DAL\\IRepository\\IBankRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-13T11:16:13.703Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 7,
+              "Title": "BankBranchWebAPI",
+              "DocumentMoniker": "C:\\Users\\Administrator\\Documents\\Projects\\BankBranch\\BackEnd\\BankBranchWebAPI\\BankBranchWebAPI.csproj",
+              "RelativeDocumentMoniker": "BankBranchWebAPI.csproj",
+              "ToolTip": "C:\\Users\\Administrator\\Documents\\Projects\\BankBranch\\BackEnd\\BankBranchWebAPI\\BankBranchWebAPI.csproj",
+              "RelativeToolTip": "BankBranchWebAPI.csproj",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-08-13T11:13:01.553Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
               "Title": "appsettings.json",
               "DocumentMoniker": "C:\\Users\\Administrator\\Documents\\Projects\\BankBranch\\BackEnd\\BankBranchWebAPI\\appsettings.json",
               "RelativeDocumentMoniker": "appsettings.json",
@@ -86,82 +127,29 @@
               "RelativeToolTip": "appsettings.json",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAAZAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-08-12T11:16:05.963Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-08-12T11:16:05.963Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 3,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\Administrator\\Documents\\Projects\\BankBranch\\BackEnd\\BankBranchWebAPI\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
               "ToolTip": "C:\\Users\\Administrator\\Documents\\Projects\\BankBranch\\BackEnd\\BankBranchWebAPI\\Program.cs",
               "RelativeToolTip": "Program.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAABCAAAA",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAABQAAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-08-12T11:16:00.656Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "BankRepository.cs",
-              "DocumentMoniker": "C:\\Users\\Administrator\\Documents\\Projects\\BankBranch\\BackEnd\\BankBranchWebAPI_DAL\\Repositories\\BankRepository.cs",
-              "RelativeDocumentMoniker": "..\\BankBranchWebAPI_DAL\\Repositories\\BankRepository.cs",
-              "ToolTip": "C:\\Users\\Administrator\\Documents\\Projects\\BankBranch\\BackEnd\\BankBranchWebAPI_DAL\\Repositories\\BankRepository.cs",
-              "RelativeToolTip": "..\\BankBranchWebAPI_DAL\\Repositories\\BankRepository.cs",
-              "ViewState": "AQIAAAsAAAAAAAAAAIA0wBYAAAArAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-12T11:37:30.651Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "20240812113115_InitialCreate.cs",
-              "DocumentMoniker": "C:\\Users\\Administrator\\Documents\\Projects\\BankBranch\\BackEnd\\BankBranchWebAPI_DAL\\Migrations\\20240812113115_InitialCreate.cs",
-              "RelativeDocumentMoniker": "..\\BankBranchWebAPI_DAL\\Migrations\\20240812113115_InitialCreate.cs",
-              "ToolTip": "C:\\Users\\Administrator\\Documents\\Projects\\BankBranch\\BackEnd\\BankBranchWebAPI_DAL\\Migrations\\20240812113115_InitialCreate.cs",
-              "RelativeToolTip": "..\\BankBranchWebAPI_DAL\\Migrations\\20240812113115_InitialCreate.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAABVAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-12T11:31:15.587Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "IBankService.cs",
-              "DocumentMoniker": "C:\\Users\\Administrator\\Documents\\Projects\\BankBranch\\BackEnd\\BankBranchWebAPI_BAL\\Services\\IBankService.cs",
-              "RelativeDocumentMoniker": "..\\BankBranchWebAPI_BAL\\Services\\IBankService.cs",
-              "ToolTip": "C:\\Users\\Administrator\\Documents\\Projects\\BankBranch\\BackEnd\\BankBranchWebAPI_BAL\\Services\\IBankService.cs",
-              "RelativeToolTip": "..\\BankBranchWebAPI_BAL\\Services\\IBankService.cs",
-              "ViewState": "AQIAAAEAAAAAAAAAAAAIwBAAAAAFAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-12T10:50:40.311Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Bank.cs",
-              "DocumentMoniker": "C:\\Users\\Administrator\\Documents\\Projects\\BankBranch\\BackEnd\\BankBranchWebAPI_DAL\\Models\\Bank.cs",
-              "RelativeDocumentMoniker": "..\\BankBranchWebAPI_DAL\\Models\\Bank.cs",
-              "ToolTip": "C:\\Users\\Administrator\\Documents\\Projects\\BankBranch\\BackEnd\\BankBranchWebAPI_DAL\\Models\\Bank.cs",
-              "RelativeToolTip": "..\\BankBranchWebAPI_DAL\\Models\\Bank.cs",
-              "ViewState": "AQIAAAYAAAAAAAAAAAAAABEAAAAjAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-12T11:36:03.206Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 9,
               "Title": "BranchController.cs",
-              "DocumentMoniker": "C:\\Users\\Administrator\\Documents\\Projects\\BankBranch\\BackEnd\\BankBranchWebAPI\\Controllers\\BranchController.cs",
-              "RelativeDocumentMoniker": "Controllers\\BranchController.cs",
-              "ToolTip": "C:\\Users\\Administrator\\Documents\\Projects\\BankBranch\\BackEnd\\BankBranchWebAPI\\Controllers\\BranchController.cs",
-              "RelativeToolTip": "Controllers\\BranchController.cs",
+              "DocumentMoniker": "C:\\Users\\Administrator\\Documents\\Projects\\BankBranch\\BackEnd\\BankBranchWebAPI\\PL\\Controllers\\BranchController.cs",
+              "RelativeDocumentMoniker": "PL\\Controllers\\BranchController.cs",
+              "ToolTip": "C:\\Users\\Administrator\\Documents\\Projects\\BankBranch\\BackEnd\\BankBranchWebAPI\\PL\\Controllers\\BranchController.cs",
+              "RelativeToolTip": "PL\\Controllers\\BranchController.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAFkAAAAiAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-08-12T11:07:32.306Z",
@@ -169,28 +157,28 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 2,
               "Title": "BankController.cs",
-              "DocumentMoniker": "C:\\Users\\Administrator\\Documents\\Projects\\BankBranch\\BackEnd\\BankBranchWebAPI\\Controllers\\BankController.cs",
-              "RelativeDocumentMoniker": "Controllers\\BankController.cs",
-              "ToolTip": "C:\\Users\\Administrator\\Documents\\Projects\\BankBranch\\BackEnd\\BankBranchWebAPI\\Controllers\\BankController.cs",
-              "RelativeToolTip": "Controllers\\BankController.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAADgAAAAdAAAA",
+              "DocumentMoniker": "C:\\Users\\Administrator\\Documents\\Projects\\BankBranch\\BackEnd\\BankBranchWebAPI\\PL\\Controllers\\BankController.cs",
+              "RelativeDocumentMoniker": "PL\\Controllers\\BankController.cs",
+              "ToolTip": "C:\\Users\\Administrator\\Documents\\Projects\\BankBranch\\BackEnd\\BankBranchWebAPI\\PL\\Controllers\\BankController.cs",
+              "RelativeToolTip": "PL\\Controllers\\BankController.cs",
+              "ViewState": "AQIAACsAAAAAAAAAAAAkwDYAAAA/AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-08-12T11:07:14.234Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "IBranchService.cs",
-              "DocumentMoniker": "C:\\Users\\Administrator\\Documents\\Projects\\BankBranch\\BackEnd\\BankBranchWebAPI_BAL\\Services\\IBranchService.cs",
-              "RelativeDocumentMoniker": "..\\BankBranchWebAPI_BAL\\Services\\IBranchService.cs",
-              "ToolTip": "C:\\Users\\Administrator\\Documents\\Projects\\BankBranch\\BackEnd\\BankBranchWebAPI_BAL\\Services\\IBranchService.cs",
-              "RelativeToolTip": "..\\BankBranchWebAPI_BAL\\Services\\IBranchService.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAAFAAAA",
+              "DocumentIndex": 5,
+              "Title": "IBranchRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Administrator\\Documents\\Projects\\BankBranch\\BackEnd\\BankBranchWebAPI\\DAL\\IRepository\\IBranchRepository.cs",
+              "RelativeDocumentMoniker": "DAL\\IRepository\\IBranchRepository.cs",
+              "ToolTip": "C:\\Users\\Administrator\\Documents\\Projects\\BankBranch\\BackEnd\\BankBranchWebAPI\\DAL\\IRepository\\IBranchRepository.cs",
+              "RelativeToolTip": "DAL\\IRepository\\IBranchRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-12T10:50:58.757Z",
+              "WhenOpened": "2024-08-13T11:16:22.597Z",
               "EditorCaption": ""
             }
           ]
