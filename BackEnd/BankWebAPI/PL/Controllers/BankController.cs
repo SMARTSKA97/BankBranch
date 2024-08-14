@@ -22,7 +22,7 @@ namespace BankWebAPI.PL.Controllers
         public async Task<ActionResult<IEnumerable<Bank>>> GetBanks()
         {
             var banks = await _bankService.GetAllBanksAsync();
-            return Ok(banks);
+            return Ok(banks.OrderBy(b =>b.Id));
         }
 
         [HttpGet("{id}")]

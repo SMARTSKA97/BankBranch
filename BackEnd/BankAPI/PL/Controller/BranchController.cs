@@ -1,0 +1,68 @@
+﻿using BankAPI.BAL.Services.Interface;
+using BankAPI.DAL.Models.DTO;
+using Microsoft.AspNetCore.Mvc;
+
+namespace BankAPI.PL.Controller
+{
+    [ApiController]
+    [Route("api/[controller]")]
+    public class BranchController : ControllerBase
+    {
+        private readonly IBranchService _branchService;
+
+        public BranchController(IBranchService branchService)
+        {
+            _branchService = branchService;
+        }
+
+        [HttpGet]
+        public async Task<ActionResult<IEnumerable<BranchDTO>>> GetAllBranches()
+        {
+            var branches = await _branchService.GetAllBranchesAsync();
+            return Ok(branches);
+        }
+
+        [HttpGet("{id}")]
+        public async Task<ActionResult<BranchDTO>> GetBranchById(int id)
+        {
+            var branch = await _branchService.GetBranchByIdAsync(id);
+            if (branch == null)
+            {
+                return NotFound();
+            }
+            return Ok(branch);
+        }
+
+        [HttpPost]
+        public async Task<ActionResult> AddBranch(BranchDTO branchDto)
+        {
+            await _branchService.AddBranchAsync(branchDto);
+            return CreatedAtAction(nameof(GetBranchById), new { id = branchDto.Id }, branchDto);
+        }
+
+        [HttpPut("{id}")]
+        public async Task<ActionResult> UpdateBranch(int id, BranchDTO branchDto)
+        {
+            if (id != branchDto.Id)
+            {
+                return BadRequest();
+            }
+
+            await _branchService.UpdateBranchAsync(branchDto);
+            return NoContent();
+        }
+
+        [HttpDelete("{id}")]
+        public async Task<ActionResult> DeleteBranch(int id)
+        {
+            var branch = await _branchService.GetBranchByIdAsync(id);
+            if (branch == null)
+            {
+                return NotFound();
+            }
+
+            await _branchService.DeleteBranchAsync(id);
+            return NoContent();
+        }
+    }
+}

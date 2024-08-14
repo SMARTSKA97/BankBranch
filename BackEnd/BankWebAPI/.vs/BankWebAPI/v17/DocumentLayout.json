@@ -72,7 +72,7 @@
               "RelativeDocumentMoniker": "PL\\Controllers\\BranchController.cs",
               "ToolTip": "C:\\Users\\Administrator\\Documents\\Projects\\BankBranch\\BackEnd\\BankWebAPI\\PL\\Controllers\\BranchController.cs",
               "RelativeToolTip": "PL\\Controllers\\BranchController.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "ViewState": "AQIAAC8AAAAAAAAAAAAgwAEAAAAMAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-08-14T10:54:26.146Z",
               "EditorCaption": ""
@@ -87,8 +87,7 @@
               "RelativeToolTip": "DAL\\IRepositories\\IBankRepository.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAA4AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-14T10:51:44.904Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-08-14T10:51:44.904Z"
             },
             {
               "$type": "Document",
@@ -100,8 +99,7 @@
               "RelativeToolTip": "BAL\\IServices\\IBankService.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAMAAAAhAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-14T10:36:22.408Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-08-14T10:36:22.408Z"
             },
             {
               "$type": "Document",
@@ -113,8 +111,7 @@
               "RelativeToolTip": "BAL\\Services\\BankService.cs",
               "ViewState": "AQIAABoAAAAAAAAAAAAMwCMAAAAiAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-14T09:51:22.247Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-08-14T09:51:22.247Z"
             },
             {
               "$type": "Document",
@@ -126,8 +123,7 @@
               "RelativeToolTip": "BAL\\Services\\BranchService.cs",
               "ViewState": "AQIAAB0AAAAAAAAAAAAgwAIAAAAiAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-14T09:51:43.912Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-08-14T09:51:43.912Z"
             },
             {
               "$type": "Document",
@@ -139,8 +135,7 @@
               "RelativeToolTip": "BAL\\IServices\\IBranchService.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-14T10:36:35.905Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-08-14T10:36:35.905Z"
             },
             {
               "$type": "Document",
@@ -150,7 +145,7 @@
               "RelativeDocumentMoniker": "PL\\Controllers\\BankController.cs",
               "ToolTip": "C:\\Users\\Administrator\\Documents\\Projects\\BankBranch\\BackEnd\\BankWebAPI\\PL\\Controllers\\BankController.cs",
               "RelativeToolTip": "PL\\Controllers\\BankController.cs",
-              "ViewState": "AQIAACMAAAAAAAAAAAAgwA0AAAAzAAAA",
+              "ViewState": "AQIAAA0AAAAAAAAAAAAAwBkAAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-08-14T09:53:02.517Z",
               "EditorCaption": ""
@@ -165,8 +160,7 @@
               "RelativeToolTip": "DAL\\IRepositories\\IBranchRepository.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAApAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-14T10:51:47.355Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-08-14T10:51:47.355Z"
             },
             {
               "$type": "Document",
@@ -178,8 +172,7 @@
               "RelativeToolTip": "DAL\\IRepositories\\IRepository.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAmAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-14T10:37:54.153Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-08-14T10:37:54.153Z"
             },
             {
               "$type": "Document",
@@ -191,8 +184,7 @@
               "RelativeToolTip": "DAL\\Repositories\\BranchRepository.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAiAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-14T10:38:09.306Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-08-14T10:38:09.306Z"
             },
             {
               "$type": "Document",
@@ -204,8 +196,7 @@
               "RelativeToolTip": "DAL\\Repositories\\BankRepository.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAFAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-14T10:39:02.511Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-08-14T10:39:02.511Z"
             },
             {
               "$type": "Document",
@@ -217,8 +208,7 @@
               "RelativeToolTip": "Program.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAhAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-14T10:44:15.198Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-08-14T10:44:15.198Z"
             },
             {
               "$type": "Document",
@@ -230,8 +220,7 @@
               "RelativeToolTip": "DAL\\Models\\Branch.cs",
               "ViewState": "AQIAAAwAAAAAAAAAAADwvxoAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-14T10:09:42.055Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-08-14T10:09:42.055Z"
             }
           ]
         }
