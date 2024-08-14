@@ -1,92 +1,45 @@
-﻿using BankWebAPI.BAL.IServices;
-using BankWebAPI.DAL.IRepository;
+﻿using BankWebAPI.BAL.Services;
+using BankWebAPI.BAL.IServices;
+using BankWebAPI.DAL.IRepositories;
 using BankWebAPI.DAL.Models;
-using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 using System.Threading.Tasks;
+using BankWebAPI.DAL.Models.DTO;
 
-namespace BankBranchWebAPI.BAL.Services
+namespace BankWebAPI.BAL.Services
 {
-    public class BranchService : IBranchService
-    {
-        private readonly IBranchRepository _branchRepository;
-        private readonly IBankRepository _bankRepository;
-
-        public BranchService(IBranchRepository branchRepository, IBankRepository bankRepository)
+        public class BranchService : IBranchService
         {
-            _branchRepository = branchRepository;
-            _bankRepository = bankRepository;
-        }
+            private readonly IBranchRepository _branchRepository;
 
-        public async Task<IEnumerable<Branch>> GetBranchesByBankIdAsync(int bankId)
-        {
-            return await _branchRepository.GetBranchesByBankIdAsync(bankId);
-        }
-
-        public async Task<Branch> GetBranchByIdAsync(int id)
-        {
-            var branch = await _branchRepository.GetBranchByIdAsync(id);
-            if (branch == null)
+            public BranchService(IBranchRepository branchRepository)
             {
-                throw new KeyNotFoundException($"Branch with ID {id} not found.");
-            }
-            return branch;
-        }
-
-        public async Task AddBranchAsync(Branch branch)
-        {
-            // Validation: Ensure the bank exists
-            var bank = await _bankRepository.GetBankByIdAsync(branch.BankId);
-            if (bank == null)
-            {
-                throw new KeyNotFoundException($"Bank with ID {branch.BankId} not found.");
+                _branchRepository = branchRepository;
             }
 
-            // Validation: Ensure unique IFSC code within the bank
-            var existingBranches = await _branchRepository.GetBranchesByBankIdAsync(branch.BankId);
-            foreach (var existingBranch in existingBranches)
+            public async Task<IEnumerable<Branch>> GetAllBranchesAsync()
             {
-                if (existingBranch.IfscCode == branch.IfscCode)
-                {
-                    throw new InvalidOperationException($"A branch with IFSC code {branch.IfscCode} already exists for this bank.");
-                }
+                return await _branchRepository.GetAllAsync();
             }
 
-            await _branchRepository.AddBranchAsync(branch);
-        }
-
-        public async Task UpdateBranchAsync(Branch branch)
-        {
-            var existingBranch = await _branchRepository.GetBranchByIdAsync(branch.ID);
-            if (existingBranch == null)
+            public async Task<Branch> GetBranchByIdAsync(int id)
             {
-                throw new KeyNotFoundException($"Branch with ID {branch.ID} not found.");
+                return await _branchRepository.GetByIdAsync(id);
             }
 
-            // Validation: Ensure unique IFSC code within the bank (excluding the current branch)
-            var existingBranches = await _branchRepository.GetBranchesByBankIdAsync(branch.BankId);
-            foreach (var br in existingBranches)
+            public async Task AddBranchAsync(Branch branch)
             {
-                if (br.ID != branch.ID && br.IfscCode == branch.IfscCode)
-                {
-                    throw new InvalidOperationException($"A branch with IFSC code {branch.IfscCode} already exists for this bank.");
-                }
+                await _branchRepository.AddAsync(branch);
             }
 
-            await _branchRepository.UpdateBranchAsync(branch);
-        }
-
-        public async Task DeleteBranchAsync(int id)
-        {
-            var branch = await _branchRepository.GetBranchByIdAsync(id);
-            if (branch == null)
+            public async Task UpdateBranchAsync(Branch branch)
             {
-                throw new KeyNotFoundException($"Branch with ID {id} not found.");
+                await _branchRepository.UpdateAsync(branch);
             }
 
-            await _branchRepository.DeleteBranchAsync(id);
+            public async Task DeleteBranchAsync(int id)
+            {
+                await _branchRepository.DeleteAsync(id);
+            }
         }
     }
-}

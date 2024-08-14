@@ -1,14 +1,11 @@
-﻿using BankWebAPI.DAL.IRepository;
+﻿using BankWebAPI.DAL.IRepositories;
 using BankWebAPI.DAL.Data;
 using BankWebAPI.DAL.Models;
 using Microsoft.EntityFrameworkCore;
-using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 using System.Threading.Tasks;
 
-namespace BankBranchWebAPI_DAL.Repositories
+namespace BankWebAPI.DAL.Repositories
 {
     public class BranchRepository : IBranchRepository
     {
@@ -19,29 +16,29 @@ namespace BankBranchWebAPI_DAL.Repositories
             _context = context;
         }
 
-        public async Task<IEnumerable<Branch>> GetBranchesByBankIdAsync(int bankId)
+        public async Task<IEnumerable<Branch>> GetAllAsync()
         {
-            return await _context.Branches.Where(br => br.BankId == bankId).ToListAsync();
+            return await _context.Branches.Include(b => b.Bank).ToListAsync();
         }
 
-        public async Task<Branch> GetBranchByIdAsync(int id)
+        public async Task<Branch> GetByIdAsync(int id)
         {
-            return await _context.Branches.Include(br => br.Bank).FirstOrDefaultAsync(br => br.ID == id);
+            return await _context.Branches.Include(b => b.Bank).FirstOrDefaultAsync(b => b.Id == id);
         }
 
-        public async Task AddBranchAsync(Branch branch)
+        public async Task AddAsync(Branch entity)
         {
-            await _context.Branches.AddAsync(branch);
+            await _context.Branches.AddAsync(entity);
             await _context.SaveChangesAsync();
         }
 
-        public async Task UpdateBranchAsync(Branch branch)
+        public async Task UpdateAsync(Branch entity)
         {
-            _context.Branches.Update(branch);
+            _context.Branches.Update(entity);
             await _context.SaveChangesAsync();
         }
 
-        public async Task DeleteBranchAsync(int id)
+        public async Task DeleteAsync(int id)
         {
             var branch = await _context.Branches.FindAsync(id);
             if (branch != null)
@@ -51,4 +48,6 @@ namespace BankBranchWebAPI_DAL.Repositories
             }
         }
     }
+
 }
+

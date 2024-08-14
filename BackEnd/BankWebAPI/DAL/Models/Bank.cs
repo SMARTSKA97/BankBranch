@@ -5,7 +5,7 @@ namespace BankWebAPI.DAL.Models;
 
 public partial class Bank
 {
-    public int ID { get; set; }
+    public int Id { get; set; }
 
     public string BankName { get; set; } = null!;
 

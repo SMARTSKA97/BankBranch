@@ -1,10 +1,8 @@
-﻿using BankWebAPI.BAL.IServices;
-using BankWebAPI.DAL.IRepository;
+﻿using  BankWebAPI.BAL.IServices;
+using BankWebAPI.DAL.Repositories;
+using BankWebAPI.DAL.IRepositories;
 using BankWebAPI.DAL.Models;
-using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 using System.Threading.Tasks;
 
 namespace BankWebAPI.BAL.Services
@@ -20,60 +18,27 @@ namespace BankWebAPI.BAL.Services
 
         public async Task<IEnumerable<Bank>> GetAllBanksAsync()
         {
-            return await _bankRepository.GetAllBanksAsync();
+            return await _bankRepository.GetAllAsync();
         }
 
         public async Task<Bank> GetBankByIdAsync(int id)
         {
-            var bank = await _bankRepository.GetBankByIdAsync(id);
-            if (bank == null)
-            {
-                throw new KeyNotFoundException("Bank not found.");
-            }
-            return bank;
+            return await _bankRepository.GetByIdAsync(id);
         }
 
         public async Task AddBankAsync(Bank bank)
         {
-            // Validation: Check if the bank name already exists
-            var existingBanks = await _bankRepository.GetAllBanksAsync();
-            if (existingBanks.Any(b => b.BankName.Equals(bank.BankName, StringComparison.OrdinalIgnoreCase)))
-            {
-                throw new ArgumentException("A bank with the same name already exists.");
-            }
-
-            await _bankRepository.AddBankAsync(bank);
+            await _bankRepository.AddAsync(bank);
         }
 
         public async Task UpdateBankAsync(Bank bank)
         {
-            // Validation: Check if the bank exists
-            var existingBank = await _bankRepository.GetBankByIdAsync(bank.ID);
-            if (existingBank == null)
-            {
-                throw new KeyNotFoundException("Bank not found.");
-            }
-
-            // Validation: Check if the bank name is unique
-            var existingBanks = await _bankRepository.GetAllBanksAsync();
-            if (existingBanks.Any(b =>b.BankName.Equals(bank.BankName, StringComparison.OrdinalIgnoreCase) && b.ID != bank.ID))
-            {
-                throw new ArgumentException("A bank with the same name already exists.");
-            }
-
-            await _bankRepository.UpdateBankAsync(bank);
+            await _bankRepository.UpdateAsync(bank);
         }
 
         public async Task DeleteBankAsync(int id)
         {
-            // Validation: Check if the bank exists
-            var bank = await _bankRepository.GetBankByIdAsync(id);
-            if (bank == null)
-            {
-                throw new KeyNotFoundException("Bank not found.");
-            }
-
-            await _bankRepository.DeleteBankAsync(id);
+            await _bankRepository.DeleteAsync(id);
         }
     }
 }

@@ -1,7 +1,9 @@
-﻿using BankWebAPI.BAL.IServices;
+using BankWebAPI.BAL.Services;
+using BankWebAPI.BAL.IServices;
 using BankWebAPI.DAL.Models;
-using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using System.Collections.Generic;
+using System.Threading.Tasks;
 
 namespace BankWebAPI.PL.Controllers
 {
@@ -17,76 +19,47 @@ namespace BankWebAPI.PL.Controllers
         }
 
         [HttpGet]
-        public async Task<ActionResult<IEnumerable<Bank>>> GetAllBanks()
+        public async Task<ActionResult<IEnumerable<Bank>>> GetBanks()
         {
             var banks = await _bankService.GetAllBanksAsync();
-            return Ok(new { Status = "Success", Data = banks });
+            return Ok(banks);
         }
 
         [HttpGet("{id}")]
-        public async Task<ActionResult<Bank>> GetBankById(int id)
+        public async Task<ActionResult<Bank>> GetBank(int id)
         {
-            try
+            var bank = await _bankService.GetBankByIdAsync(id);
+            if (bank == null)
             {
-                var bank = await _bankService.GetBankByIdAsync(id);
-                return Ok(new { Status = "Success", Data = bank });
+                return NotFound();
             }
-            catch (KeyNotFoundException ex)
-            {
-                return NotFound(new { Status = "Error", ex.Message });
-            }
+            return Ok(bank);
         }
 
         [HttpPost]
-        public async Task<ActionResult> AddBank([FromBody] Bank bank)
+        public async Task<ActionResult<Bank>> PostBank(Bank bank)
         {
-            try
-            {
-                await _bankService.AddBankAsync(bank);
-                return CreatedAtAction(nameof(GetBankById), new { id = bank.ID }, new { Status = "Success", Data = bank });
-            }
-            catch (InvalidOperationException ex)
-            {
-                return BadRequest(new { Status = "Error", ex.Message });
-            }
+            await _bankService.AddBankAsync(bank);
+            return CreatedAtAction(nameof(GetBank), new { id = bank.Id }, bank);
         }
 
         [HttpPut("{id}")]
-        [ProducesResponseType(StatusCodes.Status400BadRequest)]
-        public async Task<ActionResult> UpdateBank(int id, [FromBody] Bank bank)
+        public async Task<IActionResult> PutBank(int id, Bank bank)
         {
-            if (id != bank.ID)
+            if (id != bank.Id)
             {
-                return BadRequest(new { Status = "Error", Message = "ID mismatch." });
+                return BadRequest();
             }
 
-            try
-            {
-                await _bankService.UpdateBankAsync(bank);
-                return Ok(new { Status = "Success", Data = bank });
-            }
-            catch (KeyNotFoundException ex)
-            {
-                return NotFound(new { Status = "Error", ex.Message });
-            }
-            catch (InvalidOperationException ex)
-            {
-                return BadRequest(new { Status = "Error", ex.Message });
-            }
+            await _bankService.UpdateBankAsync(bank);
+            return NoContent();
         }
 
         [HttpDelete("{id}")]
-        public async Task<ActionResult> DeleteBank(int id)
+        public async Task<IActionResult> DeleteBank(int id)
         {
-            try
-            {
-                await _bankService.DeleteBankAsync(id);
-                return Ok(new { Status = "Success", Message = "Bank deleted successfully." });
-            }
-            catch (KeyNotFoundException ex)
-            {
-                return NotFound(new { Status = "Error", ex.Message });
-            }
+            await _bankService.DeleteBankAsync(id);
+            return NoContent();
         }
     }
 }

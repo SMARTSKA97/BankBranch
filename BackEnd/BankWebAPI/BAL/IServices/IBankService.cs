@@ -1,11 +1,10 @@
 ﻿using BankWebAPI.DAL.Models;
-using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 using System.Threading.Tasks;
+using BankWebAPI.DAL.Repositories;
 
 namespace BankWebAPI.BAL.IServices
+
 {
     public interface IBankService
     {
