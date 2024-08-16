@@ -24,6 +24,12 @@ namespace BankAPI.DAL.Repository
         {
             return await _context.Branches.FindAsync(id);
         }
+        public async Task<List<Branch>> GetBranchesByBankIdAsync(int bankId)
+        {
+            return await _context.Branches
+                .Where(b => b.BankId == bankId)
+                .ToListAsync();
+        }
 
         public async Task AddBranchAsync(Branch branch)
         {

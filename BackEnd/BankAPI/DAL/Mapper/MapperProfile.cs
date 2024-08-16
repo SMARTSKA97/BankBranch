@@ -10,6 +10,10 @@ namespace BankAPI.DAL.Mapper
         {
             CreateMap<Bank, BankDTO>().ReverseMap();
             CreateMap<Branch, BranchDTO>().ReverseMap();
+            CreateMap<Bank, BankWithBranchesDTO>()
+    .ForMember(dest => dest.BankName, opt => opt.MapFrom(src => src.BankName))
+    .ForMember(dest => dest.Branches, opt => opt.Ignore());
+
         }
     }
 }
