@@ -1,0 +1,40 @@
+<h2>Bank Management</h2>
+
+<!-- Displaying Banks in a Table -->
+<p-table [value]="banks" responsiveLayout="scroll">
+  <ng-template pTemplate="header">
+    <tr>
+      <th>ID</th>
+      <th>Bank Name</th>
+    </tr>
+  </ng-template>
+  <ng-template pTemplate="body" let-bank>
+    <tr>
+      <td>{{bank.ID}}</td>
+      <td>{{bank.Bank_Name}}</td>
+    </tr>
+  </ng-template>
+</p-table>
+
+<!-- Form for Adding or Updating Banks -->
+<h3>Add or Update Bank</h3>
+<form [formGroup]="bankForm" (ngSubmit)="onSubmit()">
+  <div class="p-field">
+    <label for="id">ID</label>
+    <input pInputText id="id" formControlName="id" />
+  </div>
+  <div class="p-field">
+    <label for="name">Bank Name</label>
+    <input pInputText id="name" formControlName="name" />
+  </div>
+  <button pButton type="submit" label="Submit"></button>
+</form>
+
+<!-- Dropdown for Deleting a Bank -->
+<h3>Delete Bank</h3>
+<p-dropdown [options]="banks" optionLabel="Bank_Name" placeholder="Select a bank to delete"
+  (onChange)="deleteBank($event.value.ID)">
+</p-dropdown>
+
+<!-- Success/Error Messages -->
+
