@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute, Router } from '@angular/router';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { BankService } from '../bank/bank.service';
 
@@ -10,37 +11,43 @@ import { BankService } from '../bank/bank.service';
 export class BankUpdateComponent implements OnInit {
   bankForm: FormGroup;
   banks: any[] = [];
+  selectedBankId: number | null = null;
 
-  constructor(private fb: FormBuilder, private bankService: BankService) {
+  constructor(private fb: FormBuilder, private bankService: BankService, private route: ActivatedRoute, private router: Router) {
     this.bankForm = this.fb.group({
-      ID: ['', Validators.required],
       Bank_Name: ['', Validators.required]
     });
   }
 
   ngOnInit(): void {
-    this.getBanks();
-  }
-
-  getBanks(): void {
-    this.bankService.getBanks().subscribe(data => {
+    this.bankService.getBanks().subscribe((data) => {
       this.banks = data;
+    });
+
+    this.route.params.subscribe((params) => {
+      const id = +params['id'];
+      if (id) {
+        this.bankService.getBankById(id).subscribe((bank) => {
+          this.bankForm.patchValue(bank);
+          this.selectedBankId = id;
+        });
+      }
     });
   }
 
   onBankSelect(event: any): void {
-    const selectedBank = event.value;
-    this.bankForm.patchValue({
-      ID: selectedBank.ID,
-      Bank_Name: selectedBank.Bank_Name
-    });
+    const selectedBankId = event.value;
+    if (selectedBankId) {
+      this.bankService.getBankById(selectedBankId).subscribe((bank) => {
+        this.bankForm.patchValue(bank);
+      });
+    }
   }
 
-  onSubmit(): void {
-    if (this.bankForm.valid) {
-      const bankData = this.bankForm.value;
-      this.bankService.updateBank(bankData.ID, { Bank_Name: bankData.Bank_Name }).subscribe(response => {
-        console.log('Bank updated successfully', response);
+  updateBank(): void {
+    if (this.bankForm.valid && this.selectedBankId !== null) {
+      this.bankService.updateBank(this.selectedBankId, this.bankForm.value).subscribe(() => {
+        this.router.navigate(['/Bank']);
       });
     }
   }

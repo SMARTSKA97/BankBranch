@@ -19,14 +19,17 @@ const routes: Routes = [
   { path: 'Bank', component: BankComponent },
   { path: 'Branch', component: BranchComponent },
   { path: 'Monitor', component: MonitorComponent },
-  { path: 'Add-Bank', component: BankAddComponent },
-  { path: 'Update-Bank', component: BankUpdateComponent },
-  { path: 'Delete-Bank', component: BankDeleteComponent },
-  { path: 'Show-Bank', component: BankShowComponent },
-  { path: 'Add-Branch', component: BranchAddComponent },
-  { path: 'Update-Branch', component: BranchUpdateComponent },
-  { path: 'Delete-Branch', component: BranchDeleteComponent },
-  { path: 'Show-Branch', component: BranchShowComponent }
+  { path: 'Add_Bank', component: BankAddComponent },
+  { path: 'Update_Bank', component: BankUpdateComponent },
+  { path: 'Update_Bank/:id', component: BankUpdateComponent},
+  { path: 'Delete_Bank', component: BankDeleteComponent },
+  { path: 'Show_Bank', component: BankShowComponent },
+  { path: 'Add_Branch', component: BranchAddComponent },
+  { path: 'Add_Branch/:id', component: BranchAddComponent },
+  { path: 'Update_Branch', component: BranchUpdateComponent },
+  { path: 'Update_Branch/:id', component: BranchUpdateComponent},
+  { path: 'Delete_Branch', component: BranchDeleteComponent },
+  { path: 'Show_Branch', component: BranchShowComponent }
 ];
 
 @NgModule({

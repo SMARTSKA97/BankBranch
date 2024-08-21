@@ -1,13 +1,9 @@
-<div class="container">
-  <h2>Delete Bank</h2>
-  <div class="field">
-    <label for="Bank">Select Bank</label>
-    <select [(ngModel)]="selectedBankId">
-      <option *ngFor="let bank of bankList" [value]="bank.ID">
-        {{ bank.Bank_Name }}
-      </option>
-    </select>
-  </div>
-
-  <p-button (click)="onDelete()" pButton label="Delete Bank" icon="pi pi-trash"></p-button>
+<div class="bank-delete-container">
+  <p-dropdown
+    [options]="banks"
+    [(ngModel)]="selectedBankId"
+    optionLabel="Bank_Name"
+    placeholder="Select a Bank">
+  </p-dropdown>
+  <p-button pButton label="Delete Bank" (click)="deleteBank()"></p-button>
 </div>

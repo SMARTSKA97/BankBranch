@@ -8,26 +8,21 @@ import { Router } from '@angular/router';
   styleUrls: ['./bank-delete.component.css']
 })
 export class BankDeleteComponent implements OnInit {
-  bankList: any[] = [];
+  banks: any[] = [];
   selectedBankId: number | null = null;
 
-  constructor(private bankService: BankService, private router: Router) {}
+  constructor(private bankService: BankService, private router: Router) { }
 
   ngOnInit(): void {
-    this.loadBanks();
-  }
-
-  loadBanks() {
-    this.bankService.getBanks().subscribe((banks) => {
-      this.bankList = banks;
+    this.bankService.getBanks().subscribe((data) => {
+      this.banks = data;
     });
   }
 
-  onDelete() {
+  deleteBank(): void {
     if (this.selectedBankId !== null) {
       this.bankService.deleteBank(this.selectedBankId).subscribe(() => {
-        console.log('Bank deleted successfully');
-        this.router.navigate(['/Bank']);
+        this.router.navigate(['/banks']);
       });
     }
   }

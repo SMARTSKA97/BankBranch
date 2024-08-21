@@ -1,13 +1,25 @@
-<div class="p-grid p-align-center">
-  <div class="p-d-flex p-jc-between">
-    <p-card header="Bank Operations">
-      <p-button label="Add Bank" icon="pi pi-plus" routerLink="/Add-Bank"></p-button>
-      <br><br>
-      <p-button label="Update Bank" icon="pi pi-refresh" routerLink="/Update-Bank"></p-button>
-      <br><br>
-      <p-button label="Delete Bank" icon="pi pi-trash" routerLink="/Delete-Bank"></p-button>
-      <br><br>
-      <p-button label="Show Banks" icon="pi pi-list" routerLink="/Show-Bank"></p-button>
-    </p-card>
-  </div>
+<div class="bank-container">
+  <p-table [value]="banks">
+    <ng-template pTemplate="header">
+      <tr>
+        <th pSortableColumn="id" style="width:20%">ID <p-sortIcon field="id"></p-sortIcon></th>
+        <th>Bank Name</th>
+        <th>Actions</th>
+      </tr>
+    </ng-template>
+    <ng-template pTemplate="body" let-bank>
+      <tr>
+        <td>{{ bank.id }}</td>
+        <td>{{ bank.Bank_Name }}</td>
+        <td>
+          <button pButton type="button" icon="pi pi-pencil" (click)="editBank(bank.id)"></button>
+          <button pButton type="button" icon="pi pi-trash" (click)="deleteBank(bank.id)"></button>
+        </td>
+      </tr>
+    </ng-template>
+  </p-table>
+
+  <button pButton label="Add Bank" icon="pi pi-plus" routerLink="/Add_Bank"></button>
+  <!-- <button pButton label="Update Bank" icon="pi pi-pencil" routerLink="/Update_Bank"></button> -->
+  <!-- <button pButton label="Show Banks" icon="pi pi-eye" routerLink="/Show_bank"></button> -->
 </div>

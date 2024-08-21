@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { BankService } from '../bank/bank.service';
 
@@ -7,23 +8,20 @@ import { BankService } from '../bank/bank.service';
   templateUrl: './bank-add.component.html',
   styleUrls: ['./bank-add.component.css']
 })
-export class BankAddComponent implements OnInit {
+export class BankAddComponent {
   bankForm: FormGroup;
 
-  constructor(private fb: FormBuilder, private bankService: BankService) {
+  constructor(private fb: FormBuilder, private bankService: BankService, private router: Router) {
     this.bankForm = this.fb.group({
-      id: ['', [Validators.required, Validators.pattern('^[0-9]+$')]],  // Ensure the ID is numeric
+      id:['', Validators.required],
       Bank_Name: ['', Validators.required]
     });
   }
 
-  ngOnInit(): void {}
-
-  onSubmit(): void {
+  addBank(): void {
     if (this.bankForm.valid) {
-      const bankData = this.bankForm.value;
-      this.bankService.addBank(bankData).subscribe(response => {
-        console.log('Bank added successfully', response);
+      this.bankService.addBank(this.bankForm.value).subscribe((res) => {
+        this.router.navigate(['/Bank']);
       });
     }
   }

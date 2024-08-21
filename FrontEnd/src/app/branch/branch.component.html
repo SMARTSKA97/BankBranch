@@ -1,11 +1,37 @@
-<p-card header="Branch Management">
-  <div class="p-d-flex p-jc-between">
-    <button pButton label="Add Branch" icon="pi pi-plus" routerLink="/Add-Branch"></button>
-    <br><br>
-    <button pButton label="Update Branch" icon="pi pi-refresh" routerLink="/Update-Branch"></button>
-    <br><br>
-    <button pButton label="Delete Branch" icon="pi pi-trash" routerLink="/Delete-Branch"></button>
-    <br><br>
-    <button pButton label="Show Branches" icon="pi pi-list" routerLink="/Show-Branch"></button>
-  </div>
-</p-card>
+<div class="branch-container">
+  <p-table [value]="branches" [tableStyle]="{'min-width': '60rem'}">
+    <ng-template pTemplate="header">
+      <tr>
+        <th pSortableColumn="id">ID <p-sortIcon field="id"></p-sortIcon></th>
+        <th>Branch Name</th>
+        <th>Address</th>
+        <th>State</th>
+        <th>Pin_Code</th>
+        <th>MICR_Code</th>
+        <th>IFSC_Code</th>
+        <th pSortableColumn="Bank_ID">Bank_ID <p-sortIcon field="Bank_ID"></p-sortIcon></th>
+        <th>Actions</th>
+      </tr>
+    </ng-template>
+    <ng-template pTemplate="body" let-branch>
+      <tr>
+        <td>{{ branch.id }}</td>
+        <td>{{ branch.Branch_Name }}</td>
+        <td>{{ branch.Address }}</td>
+        <td>{{ branch.State }}</td>
+        <td>{{ branch.Pin_Code }}</td>
+        <td>{{ branch.MICR_Code }}</td>
+        <td>{{ branch.IFSC_Code }}</td>
+        <td>{{ branch.Bank_ID }}</td>
+        <td>
+          <button pButton type="button" icon="pi pi-pencil" (click)="editBranch(branch.id)"></button>
+          <button pButton type="button" icon="pi pi-trash" (click)="deleteBranch(branch.id)"></button>
+        </td>
+      </tr>
+    </ng-template>
+  </p-table>
+
+  <button pButton label="Add Branch" icon="pi pi-plus" routerLink="/Add_Branch"></button>
+  <!-- <button pButton label="Update Branch" icon="pi pi-pencil" routerLink="/branch-update"></button> -->
+  <!-- <button pButton label="Show Branches" icon="pi pi-eye" routerLink="/branch-show"></button> -->
+</div>

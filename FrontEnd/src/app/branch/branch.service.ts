@@ -3,15 +3,23 @@ import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
 
 @Injectable({
-  providedIn: 'root',
+  providedIn: 'root'
 })
 export class BranchService {
   private apiUrl = 'http://localhost:3000/branches';
 
-  constructor(private http: HttpClient) {}
+  constructor(private http: HttpClient) { }
 
   getBranches(): Observable<any[]> {
     return this.http.get<any[]>(this.apiUrl);
+  }
+
+  getBranchById(id: number): Observable<any> {
+    return this.http.get<any>(`${this.apiUrl}/${id}`);
+  }
+
+  getBranchesByBankId(bankId: number): Observable<any[]> {
+    return this.http.get<any[]>(`${this.apiUrl}?Bank_ID=${bankId}`);
   }
 
   addBranch(branch: any): Observable<any> {

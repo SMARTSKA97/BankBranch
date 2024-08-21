@@ -23,24 +23,10 @@
     {
       "id": "6",
       "Bank_Name": "Bank F"
-    }
-  ],
-  "createBank": [
+    },
     {
-      "id": "1",
-      "Bank_Name": "Bank A"
-    }
-  ],
-  "updateBank": [
-    {
-      "id": "1",
-      "Bank_Name": "Bank A"
-    }
-  ],
-  "deleteBank": [
-    {
-      "id": "1",
-      "Bank_Name": "Bank A"
+      "Bank_Name": "Bank G",
+      "id": "7"
     }
   ],
   "branches": [
@@ -73,16 +59,6 @@
       "MICR_Code": "110002003",
       "IFSC_Code": "BANKA003",
       "Bank_ID": 1
-    },
-    {
-      "id": "4",
-      "Branch_Name": "Bank B - Branch 1",
-      "Address": "321 Pine St",
-      "State": "New York",
-      "Pin_Code": 10001,
-      "MICR_Code": "220003001",
-      "IFSC_Code": "BANKB001",
-      "Bank_ID": 2
     },
     {
       "id": "5",
@@ -133,42 +109,76 @@
       "MICR_Code": "330004003",
       "IFSC_Code": "BANKC003",
       "Bank_ID": 3
-    }
-  ],
-  "createBranch": [
+    },
+    {
+      "id": "10",
+      "Branch_Name": "Bank D - Branch 1",
+      "Address": "123 Sonoma Street",
+      "State": "Texas",
+      "Pin_Code": 90003,
+      "MICR_Code": "330004001",
+      "IFSC_Code": "BANKD001",
+      "Bank_ID": 4
+    },
+    {
+      "id": "11",
+      "Branch_Name": "Bank D - Branch 2",
+      "Address": "654 Sonoma Street",
+      "State": "Texas",
+      "Pin_Code": 90003,
+      "MICR_Code": "330004002",
+      "IFSC_Code": "BANKC002",
+      "Bank_ID": 4
+    },
+    {
+      "id": "12",
+      "Branch_Name": "Bank D - Branch 3",
+      "Address": "987 Sonoma Street",
+      "State": "New York",
+      "Pin_Code": 90003,
+      "MICR_Code": "654987",
+      "IFSC_Code": "BANKD003",
+      "Bank_ID": 4
+    },
+    {
+      "id": "13",
+      "Branch_Name": "Bank E - Branch 1",
+      "Address": "789 Maple St",
+      "State": "California",
+      "Pin_Code": "90003",
+      "MICR_Code": "110002003",
+      "IFSC_Code": "BANKD001",
+      "Bank_ID": 5
+    },
+    {
+      "Branch_Name": "Bank E - Branch 2",
+      "Address": "213, Maple Street",
+      "State": "Texas",
+      "Pin_Code": "65421",
+      "MICR_Code": "654216",
+      "IFSC_Code": "BANKE002",
+      "Bank_ID": 5,
+      "id": "4"
+    },
+    {
+      "id": "14",
+      "Branch_Name": "Bank B - Branch 1",
+      "Address": "654 Montrey",
+      "State": "California",
+      "Pin_Code": "21365",
+      "MICR_Code": "677896",
+      "IFSC_Code": "BANKB001",
+      "Bank_ID": 2
+    },
     {
       "id": "1",
-      "Branch_Name": "Bank A - Branch 1",
-      "Address": "123 Elm St",
-      "State": "California",
-      "Pin_Code": 90001,
-      "MICR_Code": "110002001",
-      "IFSC_Code": "BANKA001",
-      "Bank_ID": 1
-    }
-  ],
-  "updateBranch": [
-    {
-      "id": "1",
-      "Branch_Name": "Bank A - Branch 1",
-      "Address": "123 Elm St",
-      "State": "California",
-      "Pin_Code": 90001,
-      "MICR_Code": "110002001",
-      "IFSC_Code": "BANKA001",
-      "Bank_ID": 1
-    }
-  ],
-  "deleteBranch": [
-    {
-      "id": "1",
-      "Branch_Name": "Bank A - Branch 1",
-      "Address": "123 Elm St",
-      "State": "California",
-      "Pin_Code": 90001,
-      "MICR_Code": "110002001",
-      "IFSC_Code": "BANKA001",
-      "Bank_ID": 1
+      "Branch_Name": "fg",
+      "Address": "dsh",
+      "State": "54",
+      "Pin_Code": "665546",
+      "MICR_Code": "3576767",
+      "IFSC_Code": "dghght",
+      "Bank_ID": 5
     }
   ]
 }

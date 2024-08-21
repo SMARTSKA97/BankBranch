@@ -1,35 +1,33 @@
 import { Component } from '@angular/core';
-import { FormGroup, FormBuilder, Validators } from '@angular/forms';
+import { Router } from '@angular/router';
+import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { BranchService } from '../branch/branch.service';
 
 @Component({
   selector: 'app-branch-add',
   templateUrl: './branch-add.component.html',
+  styleUrls: ['./branch-add.component.css']
 })
 export class BranchAddComponent {
   branchForm: FormGroup;
 
-  constructor(private fb: FormBuilder, private branchService: BranchService) {
+  constructor(private fb: FormBuilder, private branchService: BranchService, private router: Router) {
     this.branchForm = this.fb.group({
-      ID: ['', Validators.required],
+      id:['', Validators.required],
       Branch_Name: ['', Validators.required],
       Address: ['', Validators.required],
       State: ['', Validators.required],
-      Pincode: ['', Validators.required],
+      Pin_Code: ['', Validators.required],
       MICR_Code: ['', Validators.required],
       IFSC_Code: ['', Validators.required],
-      Bank_ID: ['', Validators.required],
+      Bank_ID: ['', Validators.required]
     });
   }
 
-  onSubmit() {
+  addBranch(): void {
     if (this.branchForm.valid) {
-      const branchData = this.branchForm.value;
-      branchData.ID = Number(branchData.ID); // Ensure ID is numeric
-      branchData.Bank_ID = Number(branchData.Bank_ID); // Ensure Bank_ID is numeric
-
-      this.branchService.addBranch(branchData).subscribe((response) => {
-        console.log('Branch added:', response);
+      this.branchService.addBranch(this.branchForm.value).subscribe((res) => {
+        this.router.navigate(['/Branch']);
       });
     }
   }

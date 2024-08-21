@@ -1,33 +1,34 @@
 import { Component, OnInit } from '@angular/core';
-import { BranchService } from './branch.service';
+import { BranchService } from '../branch/branch.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-branch',
   templateUrl: './branch.component.html',
+  styleUrls: ['./branch.component.css']
 })
-export class BranchComponent {
-  branchObj : Branch = new Branch();
-}
+export class BranchComponent implements OnInit {
+  branches: any[] = [];
 
-export class Branch
-{
-  ID : number;
-  Branch_Name : string;
-  Address : string;
-  State : string;
-  Pin_Code : number;
-  MICR_Code : number;
-  IFSC_Code : string;
-  Bank_ID : number;
-  constructor()
-  {
-    this.ID=0;
-    this.Branch_Name="";
-    this.Address="";
-    this.State="";
-    this.Pin_Code=0;
-    this.MICR_Code=0;
-    this.IFSC_Code="";
-    this.Bank_ID=0;
+  constructor(private branchService: BranchService, private router: Router) { }
+
+  ngOnInit(): void {
+    this.getBranches();
+  }
+
+  getBranches(): void {
+    this.branchService.getBranches().subscribe((data) => {
+      this.branches = data;
+    });
+  }
+
+  deleteBranch(id: number): void {
+    this.branchService.deleteBranch(id).subscribe(() => {
+      this.getBranches(); // Refresh the list after deletion
+    });
+  }
+
+  editBranch(id: number): void {
+    this.router.navigate(['/Update_Branch', id]);
   }
 }

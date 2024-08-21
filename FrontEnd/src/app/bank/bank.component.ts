@@ -1,23 +1,34 @@
 import { Component, OnInit } from '@angular/core';
-import { BankService } from './bank.service';
-import { FormsModule } from '@angular/forms';
+import { BankService } from '../bank/bank.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-bank',
-  templateUrl: './bank.component.html'
+  templateUrl: './bank.component.html',
+  styleUrls: ['./bank.component.css']
 })
-export class BankComponent {
-  title = "Bank Management";
-  bankobj: Bank = new Bank();
-}
+export class BankComponent implements OnInit {
+  banks: any[] = [];
 
-export class Bank
-{
-  id:number;
-  Bank_Name:string;
-  constructor()
-  {
-    this.id=0;
-    this.Bank_Name="";
+  constructor(private bankService: BankService, private router: Router) { }
+
+  ngOnInit(): void {
+    this.getBanks();
+  }
+
+  getBanks(): void {
+    this.bankService.getBanks().subscribe((data) => {
+      this.banks = data;
+    });
+  }
+
+  deleteBank(id: number): void {
+    this.bankService.deleteBank(id).subscribe(() => {
+      this.getBanks(); // Refresh the list after deletion
+    });
+  }
+
+  editBank(id: number): void {
+    this.router.navigate(['/Update_Bank', id]);
   }
 }

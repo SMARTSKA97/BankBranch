@@ -1,11 +1,11 @@
-<form (ngSubmit)="onSubmit()" [formGroup]="bankForm">
-  <div>
-    <label for="ID">ID:</label>
-    <input id="ID" formControlName="ID" type="number" />
-  </div>
-  <div>
-    <label for="Bank_Name">Bank Name:</label>
-    <input id="Bank_Name" formControlName="Bank_Name" type="text" />
-  </div>
-  <button type="submit">Add Bank</button>
-</form>
+<div class="bank-add-container">
+  <form [formGroup]="bankForm" (ngSubmit)="addBank()">
+    <div class="form-group">
+      <label for="id">ID</label>
+      <input id="id" formControlName="id" type="text" pInputText />
+      <label for="Bank_Name">Bank Name</label>
+      <input id="Bank_Name" formControlName="Bank_Name" type="text" pInputText />
+    </div>
+    <button pButton label="Add Bank" type="submit"></button>
+  </form>
+</div>
