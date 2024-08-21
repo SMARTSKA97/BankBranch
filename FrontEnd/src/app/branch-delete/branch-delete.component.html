@@ -1,0 +1,11 @@
+<form (ngSubmit)="onDelete()">
+  <div>
+    <label for="branch">Select Branch:</label>
+    <select id="branch" [(ngModel)]="selectedBranchID">
+      <option *ngFor="let branch of branches" [value]="branch.ID">
+        {{ branch.Branch_Name }}
+      </option>
+    </select>
+  </div>
+  <button type="submit">Delete Branch</button>
+</form>

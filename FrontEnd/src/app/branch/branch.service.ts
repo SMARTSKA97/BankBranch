@@ -3,26 +3,26 @@ import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
 
 @Injectable({
-  providedIn: 'root'
+  providedIn: 'root',
 })
 export class BranchService {
-  private baseUrl = 'http://localhost:3000/branches';
+  private apiUrl = 'http://localhost:3000/branches';
 
-  constructor(private http: HttpClient) { }
+  constructor(private http: HttpClient) {}
 
   getBranches(): Observable<any[]> {
-    return this.http.get<any[]>(this.baseUrl);
+    return this.http.get<any[]>(this.apiUrl);
   }
 
   addBranch(branch: any): Observable<any> {
-    return this.http.post(this.baseUrl, branch);
+    return this.http.post<any>(this.apiUrl, branch);
   }
 
-  updateBranch(branch: any): Observable<any> {
-    return this.http.put(`${this.baseUrl}/${branch.id}`, branch);
+  updateBranch(id: number, branch: any): Observable<any> {
+    return this.http.put<any>(`${this.apiUrl}/${id}`, branch);
   }
 
   deleteBranch(id: number): Observable<any> {
-    return this.http.delete(`${this.baseUrl}/${id}`);
+    return this.http.delete<any>(`${this.apiUrl}/${id}`);
   }
 }

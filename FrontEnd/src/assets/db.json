@@ -1,0 +1,174 @@
+{
+  "banks": [
+    {
+      "id": "1",
+      "Bank_Name": "Bank A"
+    },
+    {
+      "id": "2",
+      "Bank_Name": "Bank B"
+    },
+    {
+      "id": "3",
+      "Bank_Name": "Bank C"
+    },
+    {
+      "id": "4",
+      "Bank_Name": "Bank D"
+    },
+    {
+      "id": "5",
+      "Bank_Name": "Bank E"
+    },
+    {
+      "id": "6",
+      "Bank_Name": "Bank F"
+    }
+  ],
+  "createBank": [
+    {
+      "id": "1",
+      "Bank_Name": "Bank A"
+    }
+  ],
+  "updateBank": [
+    {
+      "id": "1",
+      "Bank_Name": "Bank A"
+    }
+  ],
+  "deleteBank": [
+    {
+      "id": "1",
+      "Bank_Name": "Bank A"
+    }
+  ],
+  "branches": [
+    {
+      "id": "1",
+      "Branch_Name": "Bank A - Branch 1",
+      "Address": "123 Elm St",
+      "State": "California",
+      "Pin_Code": 90001,
+      "MICR_Code": 110002001,
+      "IFSC_Code": "BANKA001",
+      "Bank_ID": 1
+    },
+    {
+      "id": "2",
+      "Branch_Name": "Bank A - Branch 2",
+      "Address": "456 Oak St",
+      "State": "California",
+      "Pin_Code": 90002,
+      "MICR_Code": "110002002",
+      "IFSC_Code": "BANKA002",
+      "Bank_ID": 1
+    },
+    {
+      "id": "3",
+      "Branch_Name": "Bank A - Branch 3",
+      "Address": "789 Maple St",
+      "State": "California",
+      "Pin_Code": 90003,
+      "MICR_Code": "110002003",
+      "IFSC_Code": "BANKA003",
+      "Bank_ID": 1
+    },
+    {
+      "id": "4",
+      "Branch_Name": "Bank B - Branch 1",
+      "Address": "321 Pine St",
+      "State": "New York",
+      "Pin_Code": 10001,
+      "MICR_Code": "220003001",
+      "IFSC_Code": "BANKB001",
+      "Bank_ID": 2
+    },
+    {
+      "id": "5",
+      "Branch_Name": "Bank B - Branch 2",
+      "Address": "654 Cedar St",
+      "State": "New York",
+      "Pin_Code": "10002",
+      "MICR_Code": "220003002",
+      "IFSC_Code": "BANKB002",
+      "Bank_ID": 2
+    },
+    {
+      "id": "6",
+      "Branch_Name": "Bank B - Branch 3",
+      "Address": "987 Birch St",
+      "State": "New York",
+      "Pin_Code": 10003,
+      "MICR_Code": "220003003",
+      "IFSC_Code": "BANKB003",
+      "Bank_ID": 2
+    },
+    {
+      "id": "7",
+      "Branch_Name": "Bank C - Branch 1",
+      "Address": "123 Palm St",
+      "State": "Texas",
+      "Pin_Code": 75001,
+      "MICR_Code": "330004001",
+      "IFSC_Code": "BANKC001",
+      "Bank_ID": 3
+    },
+    {
+      "id": "8",
+      "Branch_Name": "Bank C - Branch 2",
+      "Address": "456 Willow St",
+      "State": "Texas",
+      "Pin_Code": 75002,
+      "MICR_Code": "330004002",
+      "IFSC_Code": "BANKC002",
+      "Bank_ID": 3
+    },
+    {
+      "id": "9",
+      "Branch_Name": "Bank C - Branch 3",
+      "Address": "789 Cypress St",
+      "State": "Texas",
+      "Pin_Code": 75003,
+      "MICR_Code": "330004003",
+      "IFSC_Code": "BANKC003",
+      "Bank_ID": 3
+    }
+  ],
+  "createBranch": [
+    {
+      "id": "1",
+      "Branch_Name": "Bank A - Branch 1",
+      "Address": "123 Elm St",
+      "State": "California",
+      "Pin_Code": 90001,
+      "MICR_Code": "110002001",
+      "IFSC_Code": "BANKA001",
+      "Bank_ID": 1
+    }
+  ],
+  "updateBranch": [
+    {
+      "id": "1",
+      "Branch_Name": "Bank A - Branch 1",
+      "Address": "123 Elm St",
+      "State": "California",
+      "Pin_Code": 90001,
+      "MICR_Code": "110002001",
+      "IFSC_Code": "BANKA001",
+      "Bank_ID": 1
+    }
+  ],
+  "deleteBranch": [
+    {
+      "id": "1",
+      "Branch_Name": "Bank A - Branch 1",
+      "Address": "123 Elm St",
+      "State": "California",
+      "Pin_Code": 90001,
+      "MICR_Code": "110002001",
+      "IFSC_Code": "BANKA001",
+      "Bank_ID": 1
+    }
+  ]
+}

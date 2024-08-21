@@ -18,6 +18,12 @@
   font-weight: 600;
 }
 
+.content
+{
+  padding-top: 60px;
+  align-items: center;
+  text-align: center;
+}
 
 footer {
   position: fixed;
@@ -27,4 +33,10 @@ footer {
     background-color: #1976d2;
     color: white;
     text-align: center;
+}
+
+.bank-buttons, .branch-buttons {
+  margin-bottom: 20px;
+  display: flex;
+  gap: 10px;
 }

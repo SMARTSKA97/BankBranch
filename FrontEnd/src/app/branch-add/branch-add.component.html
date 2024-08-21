@@ -1,0 +1,35 @@
+<form (ngSubmit)="onSubmit()" [formGroup]="branchForm">
+  <div>
+    <label for="ID">ID:</label>
+    <input id="ID" formControlName="ID" type="number" />
+  </div>
+  <div>
+    <label for="Branch_Name">Branch Name:</label>
+    <input id="Branch_Name" formControlName="Branch_Name" type="text" />
+  </div>
+  <div>
+    <label for="Address">Address:</label>
+    <input id="Address" formControlName="Address" type="text" />
+  </div>
+  <div>
+    <label for="State">State:</label>
+    <input id="State" formControlName="State" type="text" />
+  </div>
+  <div>
+    <label for="Pincode">Pincode:</label>
+    <input id="Pincode" formControlName="Pincode" type="number" />
+  </div>
+  <div>
+    <label for="MICR_Code">MICR Code:</label>
+    <input id="MICR_Code" formControlName="MICR_Code" type="text" />
+  </div>
+  <div>
+    <label for="IFSC_Code">IFSC Code:</label>
+    <input id="IFSC_Code" formControlName="IFSC_Code" type="text" />
+  </div>
+  <div>
+    <label for="Bank_ID">Bank ID:</label>
+    <input id="Bank_ID" formControlName="Bank_ID" type="number" />
+  </div>
+  <button type="submit">Add Branch</button>
+</form>

@@ -1,0 +1,22 @@
+<div class="bank-update-form">
+  <form [formGroup]="bankForm" (ngSubmit)="onSubmit()">
+    <div class="p-field">
+      <label for="bankSelect">Select Bank</label>
+      <p-dropdown
+        id="bankSelect"
+        [options]="banks"
+        optionLabel="Bank_Name"
+        formControlName="ID"
+        (onChange)="onBankSelect($event)"
+        placeholder="Select a Bank">
+      </p-dropdown>
+    </div>
+
+    <div class="p-field">
+      <label for="Bank_Name">Bank Name</label>
+      <input id="Bank_Name" type="text" pInputText formControlName="Bank_Name" />
+    </div>
+
+    <button pButton type="submit" label="Update Bank" class="p-button-success"></button>
+  </form>
+</div>

@@ -1,75 +1,11 @@
-<h2>Branch Management</h2>
-
-<!-- Displaying Branches in a Table -->
-<p-table [value]="branches" [paginator]="true" [rows]="10" responsiveLayout="scroll">
-  <ng-template pTemplate="header">
-    <tr>
-      <th>ID</th>
-      <th>Branch Name</th>
-      <th>Address</th>
-      <th>State</th>
-      <th>Pincode</th>
-      <th>MICR Code</th>
-      <th>IFSC Code</th>
-      <th>Bank ID</th>
-    </tr>
-  </ng-template>
-  <ng-template pTemplate="body" let-branch>
-    <tr>
-      <td>{{branch.ID}}</td>
-      <td>{{branch.Branch_Name}}</td>
-      <td>{{branch.Address}}</td>
-      <td>{{branch.State}}</td>
-      <td>{{branch.Pincode}}</td>
-      <td>{{branch.MICR_Code}}</td>
-      <td>{{branch.IFSC_Code}}</td>
-      <td>{{branch.Bank_ID}}</td>
-    </tr>
-  </ng-template>
-</p-table>
-
-<!-- Form for Adding or Updating Branches -->
-<h3>Add or Update Branch</h3>
-<form [formGroup]="branchForm" (ngSubmit)="onSubmit()">
-  <div class="p-field">
-    <label for="id">ID</label>
-    <input pInputText id="id" formControlName="id" />
+<p-card header="Branch Management">
+  <div class="p-d-flex p-jc-between">
+    <button pButton label="Add Branch" icon="pi pi-plus" routerLink="/Add-Branch"></button>
+    <br><br>
+    <button pButton label="Update Branch" icon="pi pi-refresh" routerLink="/Update-Branch"></button>
+    <br><br>
+    <button pButton label="Delete Branch" icon="pi pi-trash" routerLink="/Delete-Branch"></button>
+    <br><br>
+    <button pButton label="Show Branches" icon="pi pi-list" routerLink="/Show-Branch"></button>
   </div>
-  <div class="p-field">
-    <label for="branchName">Branch Name</label>
-    <input pInputText id="branchName" formControlName="branchName" />
-  </div>
-  <div class="p-field">
-    <label for="address">Address</label>
-    <input pInputText id="address" formControlName="address" />
-  </div>
-  <div class="p-field">
-    <label for="state">State</label>
-    <input pInputText id="state" formControlName="state" />
-  </div>
-  <div class="p-field">
-    <label for="pincode">Pincode</label>
-    <input pInputText id="pincode" formControlName="pincode" />
-  </div>
-  <div class="p-field">
-    <label for="micrCode">MICR Code</label>
-    <input pInputText id="micrCode" formControlName="micrCode" />
-  </div>
-  <div class="p-field">
-    <label for="ifscCode">IFSC Code</label>
-    <input pInputText id="ifscCode" formControlName="ifscCode" />
-  </div>
-  <div class="p-field">
-    <label for="bankId">Bank ID</label>
-    <input pInputText id="bankId" formControlName="bankId" />
-  </div>
-  <button pButton type="submit" label="Submit"></button>
-</form>
-
-<!-- Dropdown for Deleting a Branch -->
-<h3>Delete Branch</h3>
-<p-dropdown [options]="branches" optionLabel="Branch_Name" placeholder="Select a branch to delete"
-  (onChange)="deleteBranch($event.value.ID)">
-</p-dropdown>
-
-<!-- Success/Error Messages -->
+</p-card>
