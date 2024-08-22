@@ -15,6 +15,7 @@ namespace BankAPI.DAL.Repository
             _context = context;
         }
 
+
         public async Task<IEnumerable<Branch>> GetAllBranchesAsync()
         {
             return await _context.Branches.ToListAsync();

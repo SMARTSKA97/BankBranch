@@ -3,8 +3,12 @@
   "WorkspaceRootPath": "C:\\Users\\Administrator\\Documents\\Projects\\BankBranch\\BackEnd\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{6CE52802-80DC-4346-B181-BD1093D22A02}|BankAPI.csproj|c:\\users\\administrator\\documents\\projects\\bankbranch\\backend\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6CE52802-80DC-4346-B181-BD1093D22A02}|BankAPI.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{6CE52802-80DC-4346-B181-BD1093D22A02}|BankAPI.csproj|c:\\users\\administrator\\documents\\projects\\bankbranch\\backend\\pl\\controller\\bankcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6CE52802-80DC-4346-B181-BD1093D22A02}|BankAPI.csproj|solutionrelative:pl\\controller\\bankcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6CE52802-80DC-4346-B181-BD1093D22A02}|BankAPI.csproj|c:\\users\\administrator\\documents\\projects\\bankbranch\\backend\\pl\\controller\\branchcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6CE52802-80DC-4346-B181-BD1093D22A02}|BankAPI.csproj|solutionrelative:pl\\controller\\branchcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -14,24 +18,32 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 0,
           "Children": [
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
-            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\Administrator\\Documents\\Projects\\BankBranch\\BackEnd\\Program.cs",
-              "RelativeDocumentMoniker": "Program.cs",
-              "ToolTip": "C:\\Users\\Administrator\\Documents\\Projects\\BankBranch\\BackEnd\\Program.cs",
-              "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAABsAAAAAAAAAAAAAABwAAAADAAAAAAAAAA==",
+              "Title": "BankController.cs",
+              "DocumentMoniker": "C:\\Users\\Administrator\\Documents\\Projects\\BankBranch\\BackEnd\\PL\\Controller\\BankController.cs",
+              "RelativeDocumentMoniker": "PL\\Controller\\BankController.cs",
+              "ToolTip": "C:\\Users\\Administrator\\Documents\\Projects\\BankBranch\\BackEnd\\PL\\Controller\\BankController.cs",
+              "RelativeToolTip": "PL\\Controller\\BankController.cs",
+              "ViewState": "AgIAACMAAAAAAAAAAAAgwDQAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-19T10:27:37.827Z",
+              "WhenOpened": "2024-08-21T12:50:51.219Z",
               "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "BranchController.cs",
+              "DocumentMoniker": "C:\\Users\\Administrator\\Documents\\Projects\\BankBranch\\BackEnd\\PL\\Controller\\BranchController.cs",
+              "RelativeDocumentMoniker": "PL\\Controller\\BranchController.cs",
+              "ToolTip": "C:\\Users\\Administrator\\Documents\\Projects\\BankBranch\\BackEnd\\PL\\Controller\\BranchController.cs",
+              "RelativeToolTip": "PL\\Controller\\BranchController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADcAAAAPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-21T12:48:02.848Z"
             }
           ]
         }

@@ -13,28 +13,39 @@ export class BranchUpdateComponent implements OnInit {
   branches: any[] = [];
   selectedBranchId: number | null = null;
 
-  constructor(private fb: FormBuilder, private branchService: BranchService, private route: ActivatedRoute, private router: Router) {
+  constructor(
+    private fb: FormBuilder,
+    private branchService: BranchService,
+    private route: ActivatedRoute,
+    private router: Router
+  ) {
     this.branchForm = this.fb.group({
-      Branch_Name: ['', Validators.required],
-      Address: ['', Validators.required],
-      State: ['', Validators.required],
-      Pin_Code:['',Validators.required],
-      MICR_Code: ['', Validators.required],
-      IFSC_Code: ['', Validators.required],
-      Bank_ID: ['', Validators.required]
+      id: [null],  // Include the id field
+      branchName: ['', Validators.required],
+      address: ['', Validators.required],
+      state: ['', Validators.required],
+      pinCode: ['', Validators.required],
+      micrCode: ['', Validators.required],
+      ifscCode: ['', Validators.required],
+      bankId: ['', Validators.required]
     });
   }
 
   ngOnInit(): void {
-    this.branchService.getBranches().subscribe((data) => {
-      this.branches = data;
-    });
-
     this.route.params.subscribe((params) => {
       const id = +params['id'];
       if (id) {
         this.branchService.getBranchById(id).subscribe((branch) => {
-          this.branchForm.patchValue(branch);
+          this.branchForm.patchValue({
+            id: branch.id,  // Patch the id along with other fields
+            branchName: branch.branchName,
+            address: branch.address,
+            state: branch.state,
+            pinCode: branch.pinCode,
+            micrCode: branch.micrCode,
+            ifscCode: branch.ifscCode,
+            bankId: branch.bankId
+          });
           this.selectedBranchId = id;
         });
       }
@@ -42,19 +53,37 @@ export class BranchUpdateComponent implements OnInit {
   }
 
   onBranchSelect(event: any): void {
-    const selectedBranchId = event.value;
+    const selectedBranchId = event.value.id;
     if (selectedBranchId) {
       this.branchService.getBranchById(selectedBranchId).subscribe((branch) => {
-        this.branchForm.patchValue(branch);
+        this.branchForm.patchValue({
+          id: branch.id,  // Patch the id when selecting a branch
+          branchName: branch.branchName,
+          address: branch.address,
+          state: branch.state,
+          pinCode: branch.pinCode,
+          micrCode: branch.micrCode,
+          ifscCode: branch.ifscCode,
+          bankId: branch.bankId
+        });
       });
     }
   }
 
   updateBranch(): void {
-    if (this.branchForm.valid && this.selectedBranchId !== null) {
-      this.branchService.updateBranch(this.selectedBranchId, this.branchForm.value).subscribe(() => {
-        this.router.navigate(['/Branch']);
+    if (this.branchForm.valid && this.selectedBranchId != null) {
+      const updatedBranch = this.branchForm.value;  // Include the id in the update payload
+      this.branchService.updateBranch(this.selectedBranchId, updatedBranch).subscribe({
+        next: () => {
+          this.router.navigate(['/Branch']);
+        },
+        error: (err) => {
+          console.error('Update failed', err);
+          // Handle the error appropriately here
+        }
       });
+    } else {
+      console.error('Form is invalid or Selected Branch ID is null');
     }
   }
 }

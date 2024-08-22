@@ -199,6 +199,32 @@
   },
   {
     "ContainingType": "BankAPI.PL.Controller.BranchController",
+    "Method": "GetBranchesByBankId",
+    "RelativePath": "api/Branch/ByBank/{bankId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "bankId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[BankAPI.DAL.Models.DTO.BranchDTO, BankAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "BankAPI.PL.Controller.BranchController",
     "Method": "GetBranchesByBank",
     "RelativePath": "api/Branch/GetBranchesByBank/{bankId}",
     "HttpMethod": "GET",

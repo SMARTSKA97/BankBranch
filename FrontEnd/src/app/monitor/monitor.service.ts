@@ -7,7 +7,7 @@ import { environment } from 'src/environments/environment'; // Adjust the path a
   providedIn: 'root'
 })
 export class MonitorService {
-  private apiUrl = 'http://localhost:3000'; // Adjust the API URL as needed
+  private apiUrl = `${environment.Url}`; // Adjust the API URL as needed
 
   constructor(private http: HttpClient) {}
 

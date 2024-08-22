@@ -14,7 +14,7 @@ export class BankAddComponent {
   constructor(private fb: FormBuilder, private bankService: BankService, private router: Router) {
     this.bankForm = this.fb.group({
       id:['', Validators.required],
-      Bank_Name: ['', Validators.required]
+      bankName: ['', Validators.required]
     });
   }
 

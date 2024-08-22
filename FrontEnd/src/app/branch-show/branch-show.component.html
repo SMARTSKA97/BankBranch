@@ -6,6 +6,7 @@
         <th>Branch Name</th>
         <th>Address</th>
         <th>State</th>
+        <th>PIN Code</th>
         <th>MICR Code</th>
         <th>IFSC Code</th>
         <th>Bank ID</th>
@@ -14,12 +15,13 @@
     <ng-template pTemplate="body" let-branch>
       <tr>
         <td>{{ branch.id }}</td>
-        <td>{{ branch.Branch_Name }}</td>
-        <td>{{ branch.Address }}</td>
-        <td>{{ branch.State }}</td>
-        <td>{{ branch.Micr_Code }}</td>
-        <td>{{ branch.Ifsc_Code }}</td>
-        <td>{{ branch.Bank_ID }}</td>
+        <td>{{ branch.branchName }}</td>
+        <td>{{ branch.address }}</td>
+        <td>{{ branch.state }}</td>
+        <td>{{ branch.pinCode }}</td>
+        <td>{{ branch.micrCode}}</td>
+        <td>{{ branch.ifscCode }}</td>
+        <td>{{ branch.bankId }}</td>
       </tr>
     </ng-template>
   </p-table>

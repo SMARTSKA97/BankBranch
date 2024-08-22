@@ -9,20 +9,20 @@
         <th>Pin_Code</th>
         <th>MICR_Code</th>
         <th>IFSC_Code</th>
-        <th pSortableColumn="Bank_ID">Bank_ID <p-sortIcon field="Bank_ID"></p-sortIcon></th>
+        <th pSortableColumn="bankId">Bank_ID <p-sortIcon field="bankId"></p-sortIcon></th>
         <th>Actions</th>
       </tr>
     </ng-template>
     <ng-template pTemplate="body" let-branch>
       <tr>
         <td>{{ branch.id }}</td>
-        <td>{{ branch.Branch_Name }}</td>
-        <td>{{ branch.Address }}</td>
-        <td>{{ branch.State }}</td>
-        <td>{{ branch.Pin_Code }}</td>
-        <td>{{ branch.MICR_Code }}</td>
-        <td>{{ branch.IFSC_Code }}</td>
-        <td>{{ branch.Bank_ID }}</td>
+        <td>{{ branch.branchName }}</td>
+        <td>{{ branch.address }}</td>
+        <td>{{ branch.state }}</td>
+        <td>{{ branch.pinCode }}</td>
+        <td>{{ branch.micrCode }}</td>
+        <td>{{ branch.ifscCode }}</td>
+        <td>{{ branch.bankId }}</td>
         <td>
           <button pButton type="button" icon="pi pi-pencil" (click)="editBranch(branch.id)"></button>
           <button pButton type="button" icon="pi pi-trash" (click)="deleteBranch(branch.id)"></button>

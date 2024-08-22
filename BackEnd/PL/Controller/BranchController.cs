@@ -44,6 +44,20 @@ namespace BankAPI.PL.Controller
             return Ok(bankWithBranches);
         }
 
+        // GET: api/Branch/ByBank/{bankId}
+        [HttpGet("ByBank/{bankId}")]
+        public async Task<ActionResult<IEnumerable<BranchDTO>>> GetBranchesByBankId(int bankId)
+        {
+            var branches = await _branchService.GetBranchesByBankIdAsync(bankId);
+
+            //if (branches == null || branches.Count == 0)
+            //{
+            //    return NotFound();
+            //}
+
+            return Ok(branches);
+        }
+
         [HttpPost]
         public async Task<ActionResult> AddBranch(BranchDTO branchDto)
         {

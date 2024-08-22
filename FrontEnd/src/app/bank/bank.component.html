@@ -10,7 +10,7 @@
     <ng-template pTemplate="body" let-bank>
       <tr>
         <td>{{ bank.id }}</td>
-        <td>{{ bank.Bank_Name }}</td>
+        <td>{{ bank.bankName }}</td>
         <td>
           <button pButton type="button" icon="pi pi-pencil" (click)="editBank(bank.id)"></button>
           <button pButton type="button" icon="pi pi-trash" (click)="deleteBank(bank.id)"></button>

@@ -8,6 +8,7 @@ namespace BankAPI.BAL.Services.Interface
         Task<BranchDTO> GetBranchByIdAsync(int id);
         Task<BankWithBranchesDTO> GetBranchesByBankAsync(int bankId);
 
+        Task<List<BranchDTO>> GetBranchesByBankIdAsync(int bankId);
         Task AddBranchAsync(BranchDTO branchDto);
         Task UpdateBranchAsync(BranchDTO branchDto);
         Task DeleteBranchAsync(int id);

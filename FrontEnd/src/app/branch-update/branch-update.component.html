@@ -2,32 +2,32 @@
 
   <form [formGroup]="branchForm" (ngSubmit)="updateBranch()">
     <div class="form-group">
-      <label for="Branch_Name">Branch Name</label>
-      <input id="Branch_Name" formControlName="Branch_Name" type="text" pInputText />
+      <label for="branchName">Branch Name</label>
+      <input id="branchName" formControlName="branchName" type="text" pInputText />
     </div>
     <div class="form-group">
-      <label for="Address">Address</label>
-      <input id="Address" formControlName="Address" type="text" pInputText />
+      <label for="address">Address</label>
+      <input id="address" formControlName="address" type="text" pInputText />
     </div>
     <div class="form-group">
-      <label for="State">State</label>
-      <input id="State" formControlName="State" type="text" pInputText />
+      <label for="state">State</label>
+      <input id="state" formControlName="state" type="text" pInputText />
     </div>
     <div class="form-group">
-      <label for="Pin_Code">Pin Code </label>
-      <input id="Pin_Code" formControlName="Pin_Code" type="text" pInputText />
+      <label for="pinCode">Pin Code </label>
+      <input id="pinCode" formControlName="pinCode" type="text" pInputText />
     </div>
     <div class="form-group">
-      <label for="MICR_Code">MICR Code</label>
-      <input id="MICR_Code" formControlName="MICR_Code" type="text" pInputText />
+      <label for="micrCode">MICR Code</label>
+      <input id="micrCode" formControlName="micrCode" type="text" pInputText />
     </div>
     <div class="form-group">
-      <label for="IFSC_Code">IFSC Code</label>
-      <input id="IFSC_Code" formControlName="IFSC_Code" type="text" pInputText />
+      <label for="ifscCode">IFSC Code</label>
+      <input id="ifscCode" formControlName="ifscCode" type="text" pInputText />
     </div>
     <div class="form-group">
-      <label for="Bank_ID">Bank ID</label>
-      <input id="Bank_ID" formControlName="Bank_ID" type="number" pInputText />
+      <label for="bankId">Bank ID</label>
+      <input id="bankId" formControlName="bankId" type="number" pInputText />
     </div>
     <button pButton label="Update Branch" type="submit"></button>
   </form>

@@ -1,12 +1,13 @@
 import { Injectable } from '@angular/core';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Observable } from 'rxjs';
+import { environment } from '../../environments/environment';
 
 @Injectable({
   providedIn: 'root'
 })
 export class BankService {
-  private apiUrl = 'http://localhost:3000/banks'; // Change this URL if using a different backend
+  private apiUrl = `${environment.Url}/Bank`; // Change this URL if using a different backend
 
   constructor(private http: HttpClient) { }
 
@@ -22,8 +23,9 @@ export class BankService {
     return this.http.post<any>(this.apiUrl, bank);
   }
 
-  updateBank(id: number, bank: any): Observable<any> {
-    return this.http.put<any>(`${this.apiUrl}/${id}`, bank);
+  updateBank(id: number, bank: any): Observable<void> {
+    const url = `${this.apiUrl}/${id}`;
+    return this.http.put<void>(url, bank);
   }
 
   deleteBank(id: number): Observable<any> {

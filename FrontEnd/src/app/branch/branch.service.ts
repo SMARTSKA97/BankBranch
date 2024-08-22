@@ -1,12 +1,13 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
+import { environment } from 'src/environments/environment';
 
 @Injectable({
   providedIn: 'root'
 })
 export class BranchService {
-  private apiUrl = 'http://localhost:3000/branches';
+  private apiUrl = `${environment.Url}/Branch`;
 
   constructor(private http: HttpClient) { }
 
@@ -19,7 +20,7 @@ export class BranchService {
   }
 
   getBranchesByBankId(bankId: number): Observable<any[]> {
-    return this.http.get<any[]>(`${this.apiUrl}?Bank_ID=${bankId}`);
+    return this.http.get<any[]>(`${this.apiUrl}/ByBank/${bankId}`);
   }
 
   addBranch(branch: any): Observable<any> {

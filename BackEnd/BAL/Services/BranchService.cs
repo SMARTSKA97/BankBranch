@@ -51,6 +51,12 @@ namespace BankAPI.BAL.Services
             return bankWithBranches;
         }
 
+        public async Task<List<BranchDTO>> GetBranchesByBankIdAsync(int bankId)
+        {
+            var branches = await _branchRepository.GetBranchesByBankIdAsync(bankId);
+            return _mapper.Map<List<BranchDTO>>(branches);
+        }
+
         public async Task AddBranchAsync(BranchDTO branchDto)
         {
             var branch = _mapper.Map<Branch>(branchDto);

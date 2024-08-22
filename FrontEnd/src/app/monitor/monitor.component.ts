@@ -35,7 +35,7 @@ export class MonitorComponent implements OnInit {
   }
 
   loadBranches(): void {
-    if (this.selectedBankId !== null) {
+    if (this.selectedBankId != null) {
       this.branchService.getBranchesByBankId(this.selectedBankId).subscribe((data) => {
         this.branches = data;
       });
@@ -44,7 +44,7 @@ export class MonitorComponent implements OnInit {
 
   onBankChange(event: any): void {
     this.selectedBankId = event.value.id;
-    this.selectedBankName = event.value.Bank_Name;
+    this.selectedBankName = event.value.bankName;
     this.loadBranches();
   }
 
@@ -59,7 +59,7 @@ export class MonitorComponent implements OnInit {
   }
 
   deleteBranch(branchId: number): void {
-    this.monitorService.deleteBranch(branchId).subscribe(
+    this.branchService.deleteBranch(branchId).subscribe(
       () => {
         this.loadBranches();
       },
